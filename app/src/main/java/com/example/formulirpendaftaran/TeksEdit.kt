@@ -118,4 +118,16 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 }
 
                 Spacer(modifier = Modifier.height(12.dp))
-                    }
+
+                OutlinedTextField(
+                    value = textAlamat,
+                    singleLine = true,
+                    label = { Text(text = "Alamat") },
+                    placeholder = { Text("Alamat") },
+                    onValueChange = { textAlamat = it },
+                    modifier = Modifier.fillMaxWidth()
+                )
+
+                Spacer(modifier = Modifier.height(24.dp))
+
+            }
