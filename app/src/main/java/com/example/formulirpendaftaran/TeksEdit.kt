@@ -45,3 +45,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(modifier = Modifier.height(40.dp))
+
+        Text(
+            text = "Formulir Pendaftaran",
+            fontSize = 22.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.White,
+            modifier = Modifier.padding(bottom = 20.dp)
+        )
+
