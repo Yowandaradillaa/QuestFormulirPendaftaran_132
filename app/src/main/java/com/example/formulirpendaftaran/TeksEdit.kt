@@ -74,4 +74,21 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     modifier = Modifier.fillMaxWidth()
                 )
                 Spacer(modifier = Modifier.height(20.dp))
-            }
+
+                Text(
+                    text = "JENIS KELAMIN",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 14.sp
+                )
+                gender.forEach { item ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .selectable(
+                                selected = textJK == item,
+                                onClick = { textJK = item }
+                            )
+                            .padding(start = 8.dp)
+                    ) {
+
+                    }
