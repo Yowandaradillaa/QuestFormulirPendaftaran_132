@@ -130,4 +130,20 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 
                 Spacer(modifier = Modifier.height(24.dp))
 
+                Button(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0D47A1)),
+                    enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty(),
+                    onClick = {
+                        nama = textNama
+                        jenis = textJK
+                        status = textStatus
+                        alamat = textAlamat
+                    }
+                ) {
+                    Text(text = stringResource(R.string.submit), color = Color.White)
+                }
             }
+        }
+
+    }
