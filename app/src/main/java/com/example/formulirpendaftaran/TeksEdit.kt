@@ -73,4 +73,5 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     onValueChange = { textNama = it },
                     modifier = Modifier.fillMaxWidth()
                 )
+                Spacer(modifier = Modifier.height(20.dp))
             }
