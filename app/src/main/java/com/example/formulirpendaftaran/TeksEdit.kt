@@ -145,5 +145,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 }
             }
         }
+        Spacer(modifier = Modifier.height(20.dp))
+        if (nama.isNotEmpty()) {
+            ElevatedCard(
+                elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+                colors = CardDefaults.cardColors(containerColor = Color(0xFF0D47A1)),
+                modifier = Modifier
+                    .width(300.dp)
+                    .height(130.dp)
+            ) {
 
-    }
+            }
