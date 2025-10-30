@@ -96,4 +96,21 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 }
 
                 Spacer(modifier = Modifier.height(8.dp))
+
+                Text(
+                    text = "STATUS PERKAWINAN",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 14.sp
+                )
+                statusList.forEach { item ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .selectable(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            )
+                            .padding(start = 8.dp)
+                    ) {
+
                     }
