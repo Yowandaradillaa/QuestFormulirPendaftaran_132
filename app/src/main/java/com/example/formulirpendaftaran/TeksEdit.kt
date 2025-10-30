@@ -29,3 +29,15 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 
     val gender = listOf("Laki-laki", "Perempuan")
     val statusList = listOf("Janda", "Lajang", "Duda")
+
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(
+                        Color(0xFF0D47A1),
+                        Color(0xFF5472D3)
+                    )
+                )
+            )
