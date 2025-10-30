@@ -112,5 +112,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                             )
                             .padding(start = 8.dp)
                     ) {
+                        RadioButton(selected = textStatus == item, onClick = { textStatus = item })
+                        Text(text = item)
+                    }
+                }
 
+                Spacer(modifier = Modifier.height(12.dp))
                     }
