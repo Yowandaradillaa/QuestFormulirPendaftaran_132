@@ -41,3 +41,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     )
                 )
             )
+            .padding(horizontal = dimensionResource(id = R.dimen.padding_medium)),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Spacer(modifier = Modifier.height(40.dp))
