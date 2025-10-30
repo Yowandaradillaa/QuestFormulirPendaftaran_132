@@ -14,3 +14,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            FormulirPendaftaranTheme {
+                Scaffold(
+                    modifier = Modifier.fillMaxSize()
+                ) { innerPadding ->
+                    FormDataDiri(modifier = Modifier.padding(innerPadding))
+                }
+            }
+        }
+    }
+}
