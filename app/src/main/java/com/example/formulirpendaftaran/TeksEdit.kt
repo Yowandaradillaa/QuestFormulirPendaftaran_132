@@ -154,5 +154,15 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     .width(300.dp)
                     .height(130.dp)
             ) {
-
+                Column(
+                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 15.dp)
+                ) {
+                    Text(text = "Nama : "+nama, color = Color.White)
+                    Text(text = "Gender : "+jenis, color = Color.White)
+                    Text(text = "Status : "+status, color = Color.White)
+                    Text(text = "Alamat : "+alamat, color = Color.White)
+                }
             }
+        }
+    }
+}
